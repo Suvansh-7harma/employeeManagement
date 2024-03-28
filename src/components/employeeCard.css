@@ -1,0 +1,26 @@
+.employee-card-container {
+    width: calc(100% - 2rem); 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 2px 2px #c3c0c0;
+}
+
+.employee-card-container > button {
+    padding: 0.3rem 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3b3b41;
+    width: 100%; 
+    align-self: center;
+}
+
+@media screen and (min-width: 472.5px) {
+    .employee-card-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
